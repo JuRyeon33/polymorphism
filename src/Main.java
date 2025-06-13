@@ -42,9 +42,11 @@ public class Main {
         Animal a3 = new Bird();
         Animal a4 = new Wolf();
 
-        a1.makeSound();
-        a2.makeSound();
-        a3.makeSound();
-        a4.makeSound();
+        Animal [] animals = {a1, a2, a3, a4};
+
+        for (Animal animal : animals) {
+            animal.makeSound();
+        }
+
     }
 }
