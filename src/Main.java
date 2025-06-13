@@ -1,7 +1,50 @@
-//TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
-// 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
+class Animal {
+    public void makeSound() {
+        System.out.println();
+    }
+
+}
+
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("멍멍!");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("야옹!");
+    }
+}
+
+class Bird extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("짹짹!");
+    }
+}
+
+class Wolf extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("아우!");
+    }
+}
+
+
+
 public class Main {
     public static void main(String[] args) {
+        Animal a1 = new Dog();
+        Animal a2 = new Cat();
+        Animal a3 = new Bird();
+        Animal a4 = new Wolf();
 
+        a1.makeSound();
+        a2.makeSound();
+        a3.makeSound();
+        a4.makeSound();
     }
 }
